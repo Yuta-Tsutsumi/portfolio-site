@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import HomeLink from "./components/atoms/Home/HomeLink";
+import PortfolioLink from "./components/atoms/Portfolio/PortfolioLink";
+import ProfileLink from "./components/atoms/Profile/ProfileLink";
+import ContactLink from "./components/atoms/Contact/ContactLink";
+import Button from "./components/atoms/Button/Button";
+import TextBox from "./components/atoms/TextBox/TextBox";
+import "./App.scss";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="hero">
+      <HomeLink />
+      <PortfolioLink />
+      <ProfileLink />
+      <ContactLink />
+      <Button />
+      <TextBox />
     </div>
   );
-}
+};
 
 export default App;
