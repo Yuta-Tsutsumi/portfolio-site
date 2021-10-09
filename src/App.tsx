@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import HomeLink from "./components/atoms/Home/HomeLink";
 import PortfolioLink from "./components/atoms/Portfolio/PortfolioLink";
 import ProfileLink from "./components/atoms/Profile/ProfileLink";
