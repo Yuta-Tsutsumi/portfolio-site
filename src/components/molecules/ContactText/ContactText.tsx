@@ -5,7 +5,7 @@ const ContactText = () => {
   return (
     <div>
       <Input />
-      <textarea className="TexBox" placeholder="お問い合わせ内容" />
+      <textarea className="TextBox" placeholder="お問い合わせ内容" />
     </div>
   );
 };
