@@ -4,6 +4,7 @@ import PortfolioLink from "./components/atoms/Portfolio/PortfolioLink";
 import ProfileLink from "./components/atoms/Profile/ProfileLink";
 import ContactLink from "./components/atoms/Contact/ContactLink";
 import Button from "./components/atoms/Button/Button";
+import ContactText from "./components/molecules/ContactText/ContactText";
 import "./App.scss";
 
 const App: React.FC = () => {
@@ -14,6 +15,7 @@ const App: React.FC = () => {
       <ProfileLink />
       <ContactLink />
       <Button />
+      <ContactText />
     </div>
   );
 };
