@@ -1,4 +1,19 @@
-.Text {
-  width: 1200px;
-  height: 50px;
+.TextBox {
+  text-align: center;
+
+  .TextBoxTop {
+    margin-top: 15%;
+    width: 1200px;
+    height: 40px;
+    padding: 5px;
+    font-size: 15px;
+  }
+
+  .TextBoxMiddle {
+    margin-top: 50px;
+    width: 1200px;
+    height: 40px;
+    padding: 5px;
+    font-size: 15px;
+  }
 }

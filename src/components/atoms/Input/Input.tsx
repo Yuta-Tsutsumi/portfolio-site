@@ -4,8 +4,8 @@ import "./Input.scss";
 const Input: React.FC = () => {
   return (
     <div className="TextBox">
-      <input className="Text" placeholder="お名前" />
-      <input className="Text" placeholder="メールアドレス" />
+      <input className="TextBoxTop" placeholder="お名前" />
+      <input className="TextBoxMiddle" placeholder="メールアドレス" />
     </div>
   );
 };
