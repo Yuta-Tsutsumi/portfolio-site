@@ -1,7 +1,7 @@
 import React from "react";
 import "./ProfileImage.scss";
 
-const ProfileImage1 = () => {
+const ProfileImage = () => {
   return (
     <div>
       <img src="./profile.jpg" alt="プロフィール写真" />
@@ -9,4 +9,4 @@ const ProfileImage1 = () => {
   );
 };
 
-export default ProfileImage1;
+export default ProfileImage;
