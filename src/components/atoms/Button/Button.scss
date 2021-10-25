@@ -2,14 +2,9 @@
   display: inline-block;
   padding: 7px 24px;
   color: #000;
-  opacity: 0.8;
   border-radius: 4px;
   background-color: #cccc99;
-  cursor: pointer;
   box-shadow: 0 5px #cccc99;
-  &:hover {
-    opacity: 1;
-  }
 
   &:active {
     position: relative;
