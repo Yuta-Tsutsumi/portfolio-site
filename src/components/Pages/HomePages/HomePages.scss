@@ -1,4 +1,14 @@
+.HomeImage {
+  position: relative;
+  height: 100vh;
+  background-image: url("../../../portfolio.jpg");
+  background-size: cover;
+}
+
 h1 {
   color: #fff;
   margin: 0;
+  font-size: 70px;
+  text-align: center;
+  margin-top: 15%;
 }

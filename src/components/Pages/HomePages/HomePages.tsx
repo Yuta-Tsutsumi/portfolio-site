@@ -2,16 +2,19 @@ import React from "react";
 import HeaderLink from "../../molecules/HeaderLink/HeaderLink";
 import "./HomePages.scss";
 
-const HomePages = () => {
+const HomePages: React.FC = () => {
   return (
-    <>
+    <div className="HomeImage">
       <div>
         <HeaderLink />
       </div>
       <div>
-        <h1>Welcome to</h1> \n <h1>my portfolio.</h1>
+        <h1>
+          Welcome to <br />
+          my portfolio.
+        </h1>
       </div>
-    </>
+    </div>
   );
 };
 
