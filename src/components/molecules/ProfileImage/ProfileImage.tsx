@@ -1,10 +1,11 @@
 import React from "react";
 import "./ProfileImage.scss";
+import { ProfileImage } from "./profile.jpg";
 
 const ProfileImage = () => {
   return (
     <div>
-      <img src="./profile.jpg" alt="プロフィール写真" />
+      <img src={ProfileImage} alt="./profile.jpg" />
     </div>
   );
 };
