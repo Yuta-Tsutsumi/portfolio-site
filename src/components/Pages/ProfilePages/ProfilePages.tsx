@@ -1,7 +1,7 @@
 import React from "react";
 import ProfileImage from "../../molecules/ProfileImage/ProfileImage";
 
-import profileTopImage from "../../../profileTopImage2.jpg";
+import profileTopImage from "../../../profileTopImage.jpg";
 
 import "./ProfilePages.scss";
 
