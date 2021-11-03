@@ -1,9 +1,9 @@
 import React from "react";
-import "./Button.scss";
+import styles from "./Button.module.scss";
 
 const Button: React.FC = () => {
   return (
-    <div className="button">
+    <div className={styles.button}>
       <span>送信</span>
     </div>
   );

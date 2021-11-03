@@ -1,11 +1,11 @@
 import React from "react";
-import "./Input.scss";
+import styles from "./Input.module.scss";
 
 const Input: React.FC = () => {
   return (
-    <div className="TextBox">
-      <input className="TextBoxTop" placeholder="お名前" />
-      <input className="TextBoxMiddle" placeholder="メールアドレス" />
+    <div className={styles.TextBox}>
+      <input className={styles.TextBoxTop} placeholder="お名前" />
+      <input className={styles.TextBoxMiddle} placeholder="メールアドレス" />
     </div>
   );
 };

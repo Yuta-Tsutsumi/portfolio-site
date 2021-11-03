@@ -1,9 +1,9 @@
 import React from "react";
-import "./PortfolioLink.scss";
+import styles from "./PortfolioLink.module.scss";
 
 const PortfolioLink: React.FC = () => {
   return (
-    <div className="PortfolioLink">
+    <div className={styles.PortfolioLink}>
       <a href="">Portfolio</a>
     </div>
   );

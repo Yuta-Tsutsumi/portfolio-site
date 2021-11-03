@@ -1,9 +1,9 @@
 import React from "react";
-import "./HomeLink.scss";
+import styles from "./HomeLink.module.scss";
 
 const HomeLink: React.FC = () => {
   return (
-    <div className="HomeLink">
+    <div className={styles.HomeLink}>
       <a href="">Home</a>
     </div>
   );

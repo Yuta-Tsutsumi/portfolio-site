@@ -1,9 +1,9 @@
 import React from "react";
-import "./PortfolioPages.scss";
+import styles from "./PortfolioPages.module.scss";
 
-const PortfolioPages = () => {
+const PortfolioPages: React.FC = () => {
   return (
-    <div className="PortfolioLetter">
+    <div className={styles.PortfolioLetter}>
       <a href="">Portfolio</a>
     </div>
   );

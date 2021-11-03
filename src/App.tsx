@@ -4,15 +4,14 @@ import HomePages from "./components/Pages/HomePages/HomePages";
 import ContactPages from "./components/Pages/ContactPages/ContactPages";
 import ProfilePages from "./components/Pages/ProfilePages/ProfilePages";
 import PortfolioPages from "./components/Pages/PortfolioPages/PortfolioPages";
-
-import "./App.scss";
+import styles from "./App.module.scss";
 
 const App: React.FC = () => {
   return (
     <BrowserRouter>
       <div>
-        <PortfolioPages />
         <ProfilePages />
+        <PortfolioPages />
         <HomePages />
         <ContactPages />
       </div>

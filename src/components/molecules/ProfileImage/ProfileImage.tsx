@@ -1,11 +1,10 @@
 import React from "react";
-import "./ProfileImage.scss";
-
 import profile from "../../../profile.jpg";
+import styles from "./ProfileImage.module.scss";
 
-const ProfileImage = () => {
+const ProfileImage: React.FC = () => {
   return (
-    <div className="profileAlbum">
+    <div className={styles.profileAlbum}>
       <img src={profile} alt="プロフィール写真" />
     </div>
   );

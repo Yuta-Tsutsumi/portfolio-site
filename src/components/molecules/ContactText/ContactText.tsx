@@ -1,15 +1,18 @@
 import React from "react";
 import Input from "../../atoms/Input/Input";
-import "./ContactText.scss";
+import styles from "./ContactText.module.scss";
 
-const ContactText = () => {
+const ContactText: React.FC = () => {
   return (
     <>
       <div>
         <Input />
       </div>
-      <div className="TextArea">
-        <textarea className="TextAreaInput" placeholder="お問い合わせ内容" />
+      <div className={styles.TextArea}>
+        <textarea
+          className={styles.TextAreaInput}
+          placeholder="お問い合わせ内容"
+        />
       </div>
     </>
   );

@@ -1,18 +1,18 @@
 import React from "react";
 import Button from "../../atoms/Button/Button";
 import ContactText from "../../molecules/ContactText/ContactText";
-import "./ContactPages.scss";
+import styles from "./ContactPages.module.scss";
 
 const ContactPages: React.FC = () => {
   return (
-    <div className="ContactPages">
-      <div className="ContactTextLink">
+    <div className={styles.ContactPages}>
+      <div className={styles.ContactTextLink}>
         <a href="">Contact</a>
       </div>
-      <div className="ContactTextType">
+      <div className={styles.ContactTextType}>
         <ContactText />
       </div>
-      <div className="ButtonType">
+      <div className={styles.ButtonType}>
         <Button />
       </div>
     </div>

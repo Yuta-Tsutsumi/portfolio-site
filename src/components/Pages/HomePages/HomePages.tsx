@@ -1,10 +1,10 @@
 import React from "react";
 import HeaderLink from "../../molecules/HeaderLink/HeaderLink";
-import "./HomePages.scss";
+import styles from "./HomePages.module.scss";
 
 const HomePages: React.FC = () => {
   return (
-    <div className="HomeImage">
+    <div className={styles.HomeImage}>
       <div>
         <HeaderLink />
       </div>

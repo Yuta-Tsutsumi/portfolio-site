@@ -1,9 +1,9 @@
 import React from "react";
-import "./ContactLink.scss";
+import styles from "./ContactLink.module.scss";
 
 const ContactLink: React.FC = () => {
   return (
-    <div className="ContactLink">
+    <div className={styles.ContactLink}>
       <a href="">Contact</a>
     </div>
   );
