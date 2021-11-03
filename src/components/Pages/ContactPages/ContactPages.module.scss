@@ -1,0 +1,19 @@
+.ContactPages {
+  text-align: center;
+  background-image: url("../../../Contact.jpg");
+  background-size: cover;
+  object-fit: cover;
+  height: 100vh;
+  width: 100vw;
+  .ContactTextLink {
+    font-size: 50px;
+    padding: 96px 0;
+  }
+  .ButtonType {
+    margin-top: 30px;
+  }
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+}
