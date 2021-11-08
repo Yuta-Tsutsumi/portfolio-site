@@ -2,12 +2,16 @@ import React from "react";
 import ProfileImage from "../../molecules/ProfileImage/ProfileImage";
 import profileTopImage from "../../../profileTopImage.jpg";
 import styles from "./ProfilePages.module.scss";
+import HeaderLink from "../../molecules/HeaderLink/HeaderLink";
 
 const ProfilePages: React.FC = () => {
   return (
     <>
       <div className={styles.topImage}>
-        <img src={profileTopImage} alt="トップ画像" />
+        <img className={styles.Image} src={profileTopImage} alt="トップ画像" />
+        <div className={styles.tops}>
+          <HeaderLink />
+        </div>
       </div>
 
       <div className={styles.middleImage}>
@@ -18,10 +22,14 @@ const ProfilePages: React.FC = () => {
         <p>堤 佑太</p>
         <p>Yuta Tsutsumi</p>
         <p>1993年12月21日</p>
-        <p>Twitter/GitHub/Qiita</p>
+        <div>
+          <a href="https://twitter.com/warakera29">Twitter</a>/
+          <a href="https://github.com/Yuta-Tsutsumi/portfolio-site">GitHub</a>/
+          <a href="">Qiita</a>
+        </div>
       </div>
       <div className={styles.letterProfile}>
-        <a href="">Profile</a>
+        <div>Profile</div>
       </div>
     </>
   );
