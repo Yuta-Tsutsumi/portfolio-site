@@ -2,14 +2,11 @@
   display: flex;
   justify-content: space-between;
   .HomeLink {
-    margin: 30px 30px 30px 60px;
-    font-size: 23px;
-    a {
-      color: #fff;
-      text-decoration: none;
-    }
+    display: flex;
+    align-items: center;
   }
   .OthersLink {
     display: flex;
+    align-items: center;
   }
 }
