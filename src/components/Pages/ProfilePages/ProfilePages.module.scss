@@ -2,17 +2,18 @@ a {
   color: #000;
   text-decoration: none;
 }
-
 img {
   width: 100%;
 }
+
 .topImage {
-  z-index: 1;
-  position: absolute;
+  position: relative;
+
   .Image {
     position: absolute;
-    .tops {
-      position: relative;
+    .Header {
+      position: absolute;
+      z-index: auto;
     }
   }
   a {
@@ -28,7 +29,7 @@ img {
 }
 
 .letterBottom {
-  padding-top: 430px;
+  padding-top: 350px;
   padding-left: 430px;
   font-size: 38px;
   p {
