@@ -9,7 +9,7 @@ const ProfilePages: React.FC = () => {
     <>
       <div className={styles.topImage}>
         <img className={styles.Image} src={profileTopImage} alt="トップ画像" />
-        <div className={styles.tops}>
+        <div className={styles.Header}>
           <HeaderLink />
         </div>
       </div>
