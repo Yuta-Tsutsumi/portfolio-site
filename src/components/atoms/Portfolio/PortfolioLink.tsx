@@ -3,7 +3,7 @@ import styles from "./PortfolioLink.module.scss";
 
 const PortfolioLink: React.FC = () => {
   return (
-    <div className={styles.PortfolioLink}>
+    <div className={styles.portfolioLink}>
       <a href="">Portfolio</a>
     </div>
   );

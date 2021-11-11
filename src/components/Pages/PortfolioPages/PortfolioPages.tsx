@@ -4,7 +4,7 @@ import styles from "./PortfolioPages.module.scss";
 
 const PortfolioPages: React.FC = () => {
   return (
-    <div className={styles.PortfolioLetter}>
+    <div className={styles.portfolioLetter}>
       <HeaderLink />
       <div>Portfolio</div>
     </div>

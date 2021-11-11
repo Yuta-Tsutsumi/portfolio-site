@@ -6,13 +6,13 @@ import styles from "./ContactPages.module.scss";
 
 const ContactPages: React.FC = () => {
   return (
-    <div className={styles.ContactPages}>
+    <div className={styles.contactPages}>
       <HeaderLink />
-      <div className={styles.ContactTextLink}>Contact</div>
-      <div className={styles.ContactTextType}>
+      <div className={styles.contactTextLink}>Contact</div>
+      <div>
         <ContactText />
       </div>
-      <div className={styles.ButtonType}>
+      <div className={styles.buttonType}>
         <Button />
       </div>
     </div>

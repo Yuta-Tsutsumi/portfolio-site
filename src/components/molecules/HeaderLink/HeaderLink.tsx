@@ -4,11 +4,11 @@ import LinkText from "../../atoms/LinkText/LinkText";
 
 const HeaderLink: React.FC = () => {
   return (
-    <div className={styles.HeaderLink}>
-      <div className={styles.HomeLink}>
+    <div className={styles.headerLink}>
+      <div className={styles.homeLink}>
         <LinkText url="/" text="Home" />
       </div>
-      <div className={styles.OthersLink}>
+      <div className={styles.othersLink}>
         <LinkText url="/portfolio" text="Portfolio" />
         <LinkText url="/profile" text="Profile" />
         <LinkText url="/contact" text="Contact" />

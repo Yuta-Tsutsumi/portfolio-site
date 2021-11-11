@@ -4,7 +4,7 @@ import styles from "./HomePages.module.scss";
 
 const HomePages: React.FC = () => {
   return (
-    <div className={styles.HomeImage}>
+    <div className={styles.homeImage}>
       <div>
         <HeaderLink />
       </div>

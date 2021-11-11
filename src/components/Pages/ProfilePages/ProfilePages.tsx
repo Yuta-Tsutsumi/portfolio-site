@@ -8,8 +8,8 @@ const ProfilePages: React.FC = () => {
   return (
     <>
       <div className={styles.topImage}>
-        <img className={styles.Image} src={profileTopImage} alt="トップ画像" />
-        <div className={styles.Header}>
+        <img className={styles.image} src={profileTopImage} alt="トップ画像" />
+        <div className={styles.header}>
           <HeaderLink />
         </div>
       </div>
