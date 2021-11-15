@@ -29,7 +29,7 @@ const ProfilePages: React.FC = () => {
         </div>
       </div>
       <div className={styles.letterProfile}>
-        <div>Profile</div>
+        <h2>Profile</h2>
       </div>
     </>
   );

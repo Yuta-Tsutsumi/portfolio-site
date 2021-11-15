@@ -6,7 +6,7 @@ const PortfolioPages: React.FC = () => {
   return (
     <div className={styles.portfolioLetter}>
       <HeaderLink />
-      <div>Portfolio</div>
+      <h2>Portfolio</h2>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Input from "../../atoms/Input/Input";
 import styles from "./ContactText.module.scss";
 
@@ -8,9 +8,10 @@ const ContactText: React.FC = () => {
       <div>
         <Input />
       </div>
-      <div className={styles.TextArea}>
+      <div className={styles.textArea}>
         <textarea
-          className={styles.TextAreaInput}
+          // value={text}
+          className={styles.textAreaInput}
           placeholder="お問い合わせ内容"
         />
       </div>
