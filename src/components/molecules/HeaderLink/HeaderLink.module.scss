@@ -4,9 +4,31 @@
   .homeLink {
     display: flex;
     align-items: center;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }
   }
   .othersLink {
     display: flex;
     align-items: center;
+    .top {
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+      }
+    }
+    .middle {
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+      }
+    }
+    .bottom {
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+      }
+    }
   }
 }

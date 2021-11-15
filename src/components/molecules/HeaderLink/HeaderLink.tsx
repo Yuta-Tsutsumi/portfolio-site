@@ -9,9 +9,17 @@ const HeaderLink: React.FC = () => {
         <LinkText url="/" text="Home" />
       </div>
       <div className={styles.othersLink}>
-        <LinkText url="/portfolio" text="Portfolio" />
-        <LinkText url="/profile" text="Profile" />
-        <LinkText url="/contact" text="Contact" />
+        <div className={styles.top}>
+          <LinkText url="/portfolio" text="Portfolio" />
+        </div>
+
+        <div className={styles.middle}>
+          <LinkText url="/profile" text="Profile" />
+        </div>
+
+        <div className={styles.bottom}>
+          <LinkText url="/contact" text="Contact" />
+        </div>
       </div>
     </div>
   );
