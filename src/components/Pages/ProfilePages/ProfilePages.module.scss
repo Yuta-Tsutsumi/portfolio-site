@@ -37,6 +37,24 @@ img {
   p {
     margin: 5px;
   }
+  .letter {
+    display: flex;
+    .letterA {
+      &:hover {
+        color: #c0c0c0;
+      }
+    }
+    .letterB {
+      &:hover {
+        color: #c0c0c0;
+      }
+    }
+    .letterC {
+      &:hover {
+        color: #c0c0c0;
+      }
+    }
+  }
 }
 
 .letterProfile {

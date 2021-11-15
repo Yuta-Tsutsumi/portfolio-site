@@ -22,10 +22,27 @@ const ProfilePages: React.FC = () => {
         <p>堤 佑太</p>
         <p>Yuta Tsutsumi</p>
         <p>1993年12月21日</p>
-        <div>
-          <a href="https://twitter.com/warakera29">Twitter</a>/
-          <a href="https://github.com/Yuta-Tsutsumi/portfolio-site">GitHub</a>/
-          <a href="">Qiita</a>
+        <div className={styles.letter}>
+          <div>
+            <a className={styles.letterA} href="https://twitter.com/warakera29">
+              Twitter
+            </a>
+            /
+          </div>
+          <div>
+            <a
+              className={styles.letterB}
+              href="https://github.com/Yuta-Tsutsumi/portfolio-site"
+            >
+              GitHub
+            </a>
+            /
+          </div>
+          <div>
+            <a className={styles.letterC} href="">
+              Qiita
+            </a>
+          </div>
         </div>
       </div>
       <div className={styles.letterProfile}>
