@@ -1,6 +1,6 @@
 import React from "react";
 import ProfileImage from "../../molecules/ProfileImage/ProfileImage";
-import profileTopImage from "../../../profileTopImage.jpg";
+import profileTopImage from "../../../imageFolder/profileTopImage.jpg";
 import styles from "./ProfilePages.module.scss";
 import HeaderLink from "../../molecules/HeaderLink/HeaderLink";
 
