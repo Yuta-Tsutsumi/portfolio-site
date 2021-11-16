@@ -30,17 +30,20 @@
     margin-top: 80px;
   }
   .submitButton {
-    display: inline-block;
-    padding: 7px 24px;
-    color: #000;
-    border-radius: 4px;
-    background-color: #cccc99;
-    margin-top: 70px;
+    padding: 0px 36px;
+    margin-top: 30px;
     font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+    line-height: 50px;
+    background-color: #fff;
+    border-color: #76bb74;
+    color: #76bb74;
     &:hover {
-      cursor: pointer;
-      background: #edffbe;
-      // transform: scale(1.2);
+      background-color: #76bb74;
+      border: 2px solid #55a752;
+      color: #fff;
+      line-height: 50px;
     }
     &:active {
       position: relative;
