@@ -22,16 +22,19 @@ const ProfilePages: React.FC = () => {
         <p>堤 佑太</p>
         <p>Yuta Tsutsumi</p>
         <p>1993年12月21日</p>
-        <div className={styles.letter}>
+        <div className={styles.link}>
           <div>
-            <a className={styles.letterA} href="https://twitter.com/warakera29">
+            <a
+              className={styles.linkTwitter}
+              href="https://twitter.com/warakera29"
+            >
               Twitter
             </a>
             /
           </div>
           <div>
             <a
-              className={styles.letterB}
+              className={styles.linkGithub}
               href="https://github.com/Yuta-Tsutsumi/portfolio-site"
             >
               GitHub
@@ -39,7 +42,7 @@ const ProfilePages: React.FC = () => {
             /
           </div>
           <div>
-            <a className={styles.letterC} href="">
+            <a className={styles.linkQiita} href="#">
               Qiita
             </a>
           </div>
