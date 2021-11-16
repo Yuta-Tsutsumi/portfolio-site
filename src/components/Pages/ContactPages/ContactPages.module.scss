@@ -20,6 +20,7 @@
     padding: 5px;
     font-size: 15px;
     margin-top: 80px;
+    border-radius: 5px;
   }
 
   .textAreaInput {
@@ -28,22 +29,24 @@
     padding: 5px;
     font-size: 15px;
     margin-top: 80px;
+    border-radius: 5px;
   }
   .submitButton {
     padding: 0px 36px;
     margin-top: 30px;
     font-weight: 700;
     font-size: 15px;
-    color: #fff;
-    line-height: 50px;
-    background-color: #fff;
-    border-color: #76bb74;
+    line-height: 43px;
+    border-radius: 5px;
+    border: 2px solid #76bb74;
     color: #76bb74;
+    transition: all 0.15s ease;
     &:hover {
       background-color: #76bb74;
       border: 2px solid #55a752;
       color: #fff;
-      line-height: 50px;
+      line-height: 43px;
+      transition: all 0.3s ease;
     }
     &:active {
       position: relative;

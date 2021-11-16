@@ -42,7 +42,7 @@ img {
     .linkTwitter {
       display: inline-block;
       cursor: pointer;
-      transition: all 0.3s ease 0s;
+      transition: all 0.3s ease;
       &:hover {
         transform: translateY(-0.1875em);
       }
@@ -51,6 +51,7 @@ img {
       display: inline-block;
       position: relative;
       text-decoration: none;
+      transition: all 0.15s ease;
       &::after {
         position: absolute;
         content: "";
@@ -59,7 +60,7 @@ img {
         width: 0;
         height: 1px;
         background: #2196f3;
-        transition: all 0.3s ease 0s;
+        transition: all 0.3s ease;
       }
       &:hover {
         cursor: pointer;
@@ -69,8 +70,10 @@ img {
       }
     }
     .linkQiita {
+      transition: all 0.15s ease;
       &:hover {
         letter-spacing: 5px;
+        transition: all 0.3s ease;
       }
     }
   }
