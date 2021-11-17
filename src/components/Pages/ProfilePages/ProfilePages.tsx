@@ -1,4 +1,4 @@
-import { VFC } React from "react";
+import React from "react";
 import ProfileImage from "../../molecules/ProfileImage/ProfileImage";
 import profileTopImage from "../../../imageFolder/profileTopImage.jpg";
 import styles from "./ProfilePages.module.scss";
@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-const ProfilePages: React.VFC = () => {
+const ProfilePages: React.FC = () => {
   return (
     <>
       <div className={styles.topImage}>
