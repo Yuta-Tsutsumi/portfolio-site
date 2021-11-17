@@ -39,9 +39,9 @@ const ContactPages = () => {
           <div className={styles.formControl}>
             <input
               className={styles.textBox}
+              name="name"
               type="text"
               placeholder="名前"
-              name="name"
               {...register({ required: true })}
               onChange={(e) => setName(e.target.value)}
             />
@@ -54,7 +54,6 @@ const ContactPages = () => {
               neme="email"
               type="email"
               placeholder="メールアドレス"
-              name="email"
               {...register({ required: true })}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -66,7 +65,6 @@ const ContactPages = () => {
               neme="message"
               className={styles.textAreaInput}
               placeholder="お問い合わせ内容"
-              name="message"
               {...register({ required: true })}
               onChange={(e) => setInfo(e.target.value)}
             />
