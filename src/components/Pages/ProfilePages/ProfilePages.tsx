@@ -16,7 +16,6 @@ const ProfilePages: React.FC = () => {
           <HeaderLink />
         </div>
       </div>
-
       <div className={styles.middleImage}>
         <ProfileImage />
       </div>
