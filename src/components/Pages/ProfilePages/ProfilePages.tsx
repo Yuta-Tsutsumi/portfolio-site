@@ -31,7 +31,10 @@ const ProfilePages: React.FC = () => {
               className={styles.linkTwitter}
               href="https://twitter.com/warakera29"
             >
-              Twitter
+              <span>
+                <FontAwesomeIcon icon={faTwitter} />
+                &nbsp;Twitter&nbsp;
+              </span>
             </a>
             /
           </div>
@@ -40,7 +43,10 @@ const ProfilePages: React.FC = () => {
               className={styles.linkGithub}
               href="https://github.com/Yuta-Tsutsumi/portfolio-site"
             >
-              GitHub
+              <span>
+                <FontAwesomeIcon icon={faGithub} />
+                &nbsp;Github&nbsp;
+              </span>
             </a>
             /
           </div>

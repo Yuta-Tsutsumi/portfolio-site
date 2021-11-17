@@ -31,13 +31,14 @@ img {
 }
 
 .letterBottom {
-  padding-top: 400px;
-  padding-left: 430px;
+  padding-top: 430px;
+  padding-left: 440px;
   font-size: 38px;
   p {
     margin: 5px;
   }
   .link {
+    opacity: 0.8;
     display: flex;
     .linkTwitter {
       display: inline-block;
@@ -59,7 +60,7 @@ img {
         left: 0;
         width: 0;
         height: 1px;
-        background: #2196f3;
+        background: #028cfd;
         transition: all 0.3s ease;
       }
       &:hover {
@@ -80,7 +81,7 @@ img {
 }
 
 .letterProfile {
-  margin-top: 130px;
+  margin-top: 170px;
   font-size: 50px;
   text-align: center;
 }
