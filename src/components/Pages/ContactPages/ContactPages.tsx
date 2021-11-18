@@ -42,46 +42,62 @@ const ContactPages: React.FC = () => {
           <div className={classes.inputWrapper}>
             <input
               className={styles.textBox}
-              name="name"
-              type="text"
               placeholder="名前"
-              ref={register}
+              {...register("newName", {
+                required: {
+                  value: true,
+                  message: "名前を入力してください",
+                },
+              })}
+              type="newName"
+              disabled={disabled}
+              className={classes.input}
               onChange={(e) => setName(e.target.value)}
             />
-            {errors.name && <span>名前を入力してください</span>}
+           <span className={classes.inputError}>
+              {errors.newName.message}
           </div>
+
+
 
           <div className={classes.inputWrapper}>
             <input
               className={styles.textBox}
-              type="email"
               placeholder="メールアドレス"
-              {...register("newMessage", {
+              {...register("newEmail", {
                 required: {
                   value: true,
                   message: "メールアドレスを入力してください",
                 },
               })}
-              type="newmessage"
+              type="newEmail"
               disabled={disabled}
               className={classes.input}
               onChange={(e) => setEmail(e.target.value)}
             />
             <span className={classes.inputError}>
-              {errors.newmessage.message}
+              {errors.newEmail.message}
             </span>
-            {/* {errors.email && <span>メールアドレスを入力してください</span>} */}
           </div>
+
 
           <div className={classes.inputWrapper}>
             <textarea
-              neme="message"
               className={styles.textAreaInput}
               placeholder="お問い合わせ内容"
-              ref={register}
-              onChange={(e) => setInfo(e.target.value)}
+              {...register("newMessage", {
+                required: {
+                  value: true,
+                  message: "お問い合わせ内容を入力してください",
+                },
+              })}
+              disabled={disabled}
+              className={classes.input}
+              onChange={(e) => setEmail(e.target.value)}
             />
-            {errors.message && <span>お問い合わせ内容を入力してください</span>}
+            <span className={classes.inputError}>
+              {errors.newMessage.message}
+            </span>
           </div>
 
           <button className={styles.submitButton} type="submit">
@@ -95,20 +111,4 @@ const ContactPages: React.FC = () => {
 
 export default ContactPages;
 
-<div className={classes.inputWrapper}>
-  <input
-    placeholder="新パスワード"
-    {...register("newPassword", {
-      required: {
-        value: true,
-        message: "新パスワードを入力してください",
-      },
-    })}
-    type="password"
-    disabled={disabled}
-    className={classes.input}
-  />
-  {errors.newPassword && (
-    <span className={classes.inputError}>{errors.newPassword.message}</span>
-  )}
-</div>;
+
