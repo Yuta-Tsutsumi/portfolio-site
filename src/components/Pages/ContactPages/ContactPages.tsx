@@ -54,11 +54,8 @@ const ContactPages: React.FC = () => {
               className={classes.input}
               onChange={(e) => setName(e.target.value)}
             />
-           <span className={classes.inputError}>
-              {errors.newName.message}
+            <span className={classes.inputError}>{errors.newName.message}</span>
           </div>
-
-
 
           <div className={classes.inputWrapper}>
             <input
@@ -79,7 +76,6 @@ const ContactPages: React.FC = () => {
               {errors.newEmail.message}
             </span>
           </div>
-
 
           <div className={classes.inputWrapper}>
             <textarea
@@ -110,5 +106,3 @@ const ContactPages: React.FC = () => {
 };
 
 export default ContactPages;
-
-
