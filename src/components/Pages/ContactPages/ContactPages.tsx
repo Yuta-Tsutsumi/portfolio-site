@@ -56,7 +56,7 @@ const ContactPages: React.FC = () => {
               className={styles.textBox}
               type="email"
               placeholder="メールアドレス"
-              {...register("newmessage", {
+              {...register("newMessage", {
                 required: {
                   value: true,
                   message: "メールアドレスを入力してください",
