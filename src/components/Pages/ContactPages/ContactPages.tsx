@@ -39,7 +39,7 @@ const ContactPages: React.FC = () => {
         <HeaderLink />
         <h2>Contact</h2>
         <form onSubmit={(e) => handleOnSubmit(e)}>
-          <div className={classes.inputWrapper}>
+          <div className={styles.inputWrapper}>
             <input
               className={styles.textBox}
               placeholder="名前"
@@ -49,15 +49,15 @@ const ContactPages: React.FC = () => {
                   message: "名前を入力してください",
                 },
               })}
-              type="newName"
+              type="text"
               disabled={disabled}
-              className={classes.input}
+              className={styles.input}
               onChange={(e) => setName(e.target.value)}
             />
-            <span className={classes.inputError}>{errors.newName.message}</span>
+            <span className={styles.inputError}>{errors.newName.message}</span>
           </div>
 
-          <div className={classes.inputWrapper}>
+          <div className={styles.inputWrapper}>
             <input
               className={styles.textBox}
               placeholder="メールアドレス"
@@ -67,17 +67,15 @@ const ContactPages: React.FC = () => {
                   message: "メールアドレスを入力してください",
                 },
               })}
-              type="newEmail"
+              type="email"
               disabled={disabled}
-              className={classes.input}
+              className={styles.input}
               onChange={(e) => setEmail(e.target.value)}
             />
-            <span className={classes.inputError}>
-              {errors.newEmail.message}
-            </span>
+            <span className={styles.inputError}>{errors.newEmail.message}</span>
           </div>
 
-          <div className={classes.inputWrapper}>
+          <div className={styles.inputWrapper}>
             <textarea
               className={styles.textAreaInput}
               placeholder="お問い合わせ内容"
@@ -88,10 +86,10 @@ const ContactPages: React.FC = () => {
                 },
               })}
               disabled={disabled}
-              className={classes.input}
+              className={styles.input}
               onChange={(e) => setEmail(e.target.value)}
             />
-            <span className={classes.inputError}>
+            <span className={styles.inputError}>
               {errors.newMessage.message}
             </span>
           </div>
