@@ -1,51 +1,49 @@
 .contactPages {
   text-align: center;
-  background-image: url("../../../imageFolder/Contact.jpg");
-  background-size: cover;
-  object-fit: cover;
-  height: 100vh;
   width: 100vw;
-
+  height: 100vh;
+  background-image: url("../../../imageFolder/Contact.jpg");
+  object-fit: cover;
+  background-size: cover;
   h2 {
-    color: #000;
-    margin: 0;
-    font-size: 50px;
     text-align: center;
+    margin: 0;
     padding-top: 15px;
+    font-size: 50px;
+    color: #000;
     opacity: 0.8;
   }
   .textBox {
+    margin-top: 80px;
+    padding: 5px;
     width: 500px;
     height: 40px;
-    padding: 5px;
-    font-size: 15px;
-    margin-top: 80px;
     border-radius: 5px;
+    font-size: 15px;
   }
-
   .textAreaInput {
+    margin-top: 80px;
+    padding: 5px;
     width: 500px;
     height: 130px;
-    padding: 5px;
-    font-size: 15px;
-    margin-top: 80px;
     border-radius: 5px;
+    font-size: 15px;
   }
   .submitButton {
-    padding: 0px 36px;
     margin-top: 30px;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 43px;
+    padding: 0px 36px;
     border-radius: 5px;
     border: 2px solid #76bb74;
+    line-height: 43px;
+    font-size: 15px;
+    font-weight: 700;
     color: #76bb74;
     transition: all 0.15s ease;
     &:hover {
-      background-color: #76bb74;
       border: 2px solid #55a752;
-      color: #fff;
       line-height: 43px;
+      color: #fff;
+      background-color: #76bb74;
       transition: all 0.3s ease;
     }
     &:active {
@@ -55,14 +53,14 @@
     }
   }
   .contactTextLink {
-    font-size: 50px;
     padding: 70px 0;
+    font-size: 50px;
   }
   .buttonType {
     margin-top: 38px;
   }
   a {
-    color: #000;
     text-decoration: none;
+    color: #000;
   }
 }
