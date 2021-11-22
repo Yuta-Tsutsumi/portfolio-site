@@ -1,5 +1,4 @@
 .contactPages {
-  text-align: center;
   width: 100vw;
   height: 100vh;
   background-image: url("../../../imageFolder/Contact.jpg");
@@ -12,55 +11,274 @@
     font-size: 50px;
     color: #000;
     opacity: 0.8;
+    margin-bottom: 60px;
   }
-  .textBox {
-    margin-top: 80px;
-    padding: 5px;
-    width: 500px;
-    height: 40px;
-    border-radius: 5px;
-    font-size: 15px;
-  }
-  .textAreaInput {
-    margin-top: 80px;
-    padding: 5px;
-    width: 500px;
-    height: 130px;
-    border-radius: 5px;
-    font-size: 15px;
-  }
-  .submitButton {
-    margin-top: 30px;
-    padding: 0px 36px;
-    border-radius: 5px;
-    border: 2px solid #76bb74;
-    line-height: 43px;
-    font-size: 15px;
-    font-weight: 700;
-    color: #76bb74;
-    transition: all 0.15s ease;
-    &:hover {
-      border: 2px solid #55a752;
-      line-height: 43px;
-      color: #fff;
-      background-color: #76bb74;
-      transition: all 0.3s ease;
-    }
-    &:active {
+  .inputWrapper {
+    // margin-left: 600px;
+    // margin: 0 auto;
+    // width: 100%;
+    // text-align: center;
+    margin: 0 600px 0 600px;
+    .textForm {
       position: relative;
-      top: 7px;
-      box-shadow: none;
+      .textBox {
+        position: relative;
+        padding: 5px;
+        border-radius: 5px;
+        width: 500px;
+        height: 40px;
+        font-size: 15px;
+        border-width: 0 0 2px 0;
+        font-family: Lusitana, serif;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        &:hover {
+          color: #76bb74;
+        }
+
+        &:hover {
+          color: #76bb74;
+        }
+        &:focus {
+          outline: none;
+          border: 2px solid #76bb74;
+          border-width: 0 0 2px 0;
+          color: #000;
+        }
+        &:focus,
+        &.not-empty {
+          + .label {
+            transform: translateY(-45px);
+            color: #76bb74;
+          }
+        }
+      }
+
+      .label {
+        z-index: 5;
+        position: absolute;
+        left: 20px;
+        bottom: 11px;
+        font-family: Lusitana, serif;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #888;
+        cursor: text;
+        transition: transform 0.2s ease-in-out;
+        &:hover {
+          color: #76bb74;
+        }
+      }
+    }
+
+    .emailForm {
+      position: relative;
+      .emailBox {
+        margin-top: 60px;
+        padding: 5px;
+        border-radius: 5px;
+        width: 500px;
+        height: 40px;
+        font-size: 15px;
+        border-width: 0 0 2px 0;
+        font-family: Lusitana, serif;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        &:hover {
+          color: #76bb74;
+        }
+        &:focus {
+          outline: none;
+          border: 2px solid #76bb74;
+          border-width: 0 0 2px 0;
+          color: #000;
+        }
+        &:focus,
+        &.not-empty {
+          + .label {
+            transform: translateY(-45px);
+            color: #76bb74;
+          }
+        }
+      }
+      .label {
+        position: absolute;
+        left: 20px;
+        bottom: 11px;
+        font-family: Lusitana, serif;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #888;
+        cursor: text;
+        transition: transform 0.2s ease-in-out;
+        &:hover {
+          color: #76bb74;
+        }
+      }
+    }
+
+    .messageForm {
+      position: relative;
+      .messageBox {
+        padding: 5px;
+        border-radius: 5px;
+        width: 500px;
+        height: 130px;
+        font-size: 15px;
+        border-width: 0 0 2px 0;
+        font-family: Lusitana, serif;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        margin-top: 50px;
+        &:hover {
+          color: #76bb74;
+        }
+        &:focus {
+          outline: none;
+          border: 2px solid #76bb74;
+          border-width: 0 0 2px 0;
+          color: #000;
+        }
+        &:focus,
+        &.not-empty {
+          + .label {
+            transform: translateY(-45px);
+            color: #76bb74;
+          }
+        }
+      }
+      .label {
+        z-index: 5;
+        position: absolute;
+        top: 60px;
+        left: 20px;
+        font-family: Lusitana, serif;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #888;
+        cursor: text;
+        transition: transform 0.2s ease-in-out;
+        &:hover {
+          color: #76bb74;
+        }
+      }
+    }
+
+    .errorsMessage {
+      font-size: 20px;
+      font-weight: bolder;
+      color: #38308b;
     }
   }
-  .contactTextLink {
-    padding: 70px 0;
-    font-size: 50px;
-  }
-  .buttonType {
-    margin-top: 38px;
-  }
-  a {
-    text-decoration: none;
-    color: #000;
+  .aaa {
+    text-align: center;
+    .submitButton {
+      text-align: center;
+      margin-top: 100px;
+      padding: 0px 36px;
+      border-radius: 5px;
+      border: 2px solid #76bb74;
+      line-height: 43px;
+      font-size: 15px;
+      font-weight: 700;
+      color: #76bb74;
+      transition: all 0.15s ease;
+      &:hover {
+        border: 2px solid #55a752;
+        line-height: 43px;
+        color: #fff;
+        background-color: #76bb74;
+        transition: all 0.3s ease;
+      }
+      &:active {
+        position: relative;
+        top: 7px;
+        box-shadow: none;
+      }
+    }
+    .contactTextLink {
+      padding: 70px 0;
+      font-size: 50px;
+    }
+    .buttonType {
+      margin-top: 38px;
+    }
+    a {
+      text-decoration: none;
+      color: #000;
+    }
   }
 }
+
+// .contactPages {
+//   text-align: center;
+//   width: 100vw;
+//   height: 100vh;
+//   background-image: url("../../../imageFolder/Contact.jpg");
+//   object-fit: cover;
+//   background-size: cover;
+//   h2 {
+//     text-align: center;
+//     margin: 0;
+//     padding-top: 15px;
+//     font-size: 50px;
+//     color: #000;
+//     opacity: 0.8;
+//   }
+//   .textBox {
+//     margin-top: 80px;
+//     padding: 5px;
+//     width: 500px;
+//     height: 40px;
+//     border-radius: 5px;
+//     font-size: 15px;
+//   }
+//   .textAreaInput {
+//     margin-top: 80px;
+//     padding: 5px;
+//     width: 500px;
+//     height: 130px;
+//     border-radius: 5px;
+//     font-size: 15px;
+//   }
+//   .submitButton {
+//     margin-top: 30px;
+//     padding: 0px 36px;
+//     border-radius: 5px;
+//     border: 2px solid #76bb74;
+//     line-height: 43px;
+//     font-size: 15px;
+//     font-weight: 700;
+//     color: #76bb74;
+//     transition: all 0.15s ease;
+//     &:hover {
+//       border: 2px solid #55a752;
+//       line-height: 43px;
+//       color: #fff;
+//       background-color: #76bb74;
+//       transition: all 0.3s ease;
+//     }
+//     &:active {
+//       position: relative;
+//       top: 7px;
+//       box-shadow: none;
+//     }
+//   }
+//   .contactTextLink {
+//     padding: 70px 0;
+//     font-size: 50px;
+//   }
+//   .buttonType {
+//     margin-top: 38px;
+//   }
+//   a {
+//     text-decoration: none;
+//     color: #000;
+//   }
+// }

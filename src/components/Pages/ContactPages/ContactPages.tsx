@@ -1,106 +1,148 @@
 import React, { useState } from "react";
-import { useForm } from "react-hook-form";
+import { useForm, SubmitHandler } from "react-hook-form";
 import HeaderLink from "../../molecules/HeaderLink/HeaderLink";
 import styles from "./ContactPages.module.scss";
 
-interface IFormInput {
+interface IFormInputs {
   name: string;
   email: string;
   message: string;
 }
 
-const ContactPages: React.FC = () => {
-  const [email, setEmail] = useState<string>("");
-  const [name, setName] = useState<string>("");
-  const [info, setInfo] = useState<string>("");
-  const { register, handleSubmit, errors, formState } = useForm<IFormInput>({
-    mode: "onChange",
-  });
-  const onSubmit = (data: IFormInput) => console.log(data);
-
-  const handleOnSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    //再読み込みさせない
-    e.preventDefault();
-
-    //email,nameをアラート
-    alert(`名前:  ${name}
-メールアドレス:  ${email}
-お問合わせ内容:  ${info}`);
-
-    //email,name変数を初期化
-    setEmail("");
-    setName("");
-    setInfo("");
-  };
+const onSubmit: SubmitHandler<IFormInputs> = (data: any) => {
+  console.log(data);
+};
+export default function App() {
+  const {
+    register,
+    formState: { errors },
+    handleSubmit,
+  } = useForm<IFormInputs>();
 
   return (
-    <>
-      <div className={styles.contactPages}>
+    <form className={styles.contactPages} onSubmit={handleSubmit(onSubmit)}>
+      <div>
         <HeaderLink />
-        <h2>Contact</h2>
-        <form onSubmit={(e) => handleOnSubmit(e)}>
-          <div className={styles.inputWrapper}>
-            <input
-              className={styles.textBox}
-              placeholder="名前"
-              {...register("newName", {
-                required: {
-                  value: true,
-                  message: "名前を入力してください",
-                },
-              })}
-              type="text"
-              disabled={disabled}
-              className={styles.input}
-              onChange={(e) => setName(e.target.value)}
-            />
-            <span className={styles.inputError}>{errors.newName.message}</span>
-          </div>
-
-          <div className={styles.inputWrapper}>
-            <input
-              className={styles.textBox}
-              placeholder="メールアドレス"
-              {...register("newEmail", {
-                required: {
-                  value: true,
-                  message: "メールアドレスを入力してください",
-                },
-              })}
-              type="email"
-              disabled={disabled}
-              className={styles.input}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <span className={styles.inputError}>{errors.newEmail.message}</span>
-          </div>
-
-          <div className={styles.inputWrapper}>
-            <textarea
-              className={styles.textAreaInput}
-              placeholder="お問い合わせ内容"
-              {...register("newMessage", {
-                required: {
-                  value: true,
-                  message: "お問い合わせ内容を入力してください",
-                },
-              })}
-              disabled={disabled}
-              className={styles.input}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <span className={styles.inputError}>
-              {errors.newMessage.message}
-            </span>
-          </div>
-
-          <button className={styles.submitButton} type="submit">
-            送信
-          </button>
-        </form>
       </div>
-    </>
-  );
-};
+      <h2>Contact</h2>
+      <div className={styles.inputWrapper}>
+        <div className={styles.textForm}>
+          <input
+            className={styles.textBox}
+            // placeholder="名前"
+            type="text"
+            {...register("name", { required: true })}
+          />
+          <label className={styles.label}>name</label>
+        </div>
+        {errors.name && (
+          <div className={styles.errorsMessage}>※名前を入れてください</div>
+        )}
 
-export default ContactPages;
+        <div className={styles.emailForm}>
+          <input
+            className={styles.emailBox}
+            // placeholder="メールアドレス"
+            type="email"
+            {...register("email", { required: true })}
+          />
+          <label className={styles.label}>email</label>
+        </div>
+        {errors.email && (
+          <div className={styles.errorsMessage}>
+            ※メールアドレスを入れてください
+          </div>
+        )}
+
+        <div className={styles.messageForm}>
+          <textarea
+            className={styles.messageBox}
+            // placeholder="お問い合わせ内容"
+            {...register("message", { required: true })}
+          />
+          <label className={styles.label}>message</label>
+        </div>
+        {errors.message && (
+          <div className={styles.errorsMessage}>
+            ※お問い合わせ内容を入れてください
+          </div>
+        )}
+      </div>
+      <div className={styles.aaa}>
+        <button className={styles.submitButton} type="submit">
+          送信
+        </button>
+      </div>
+    </form>
+  );
+}
+
+// interface IFormInput {
+//   name: string;
+//   email: string;
+//   message: string;
+// }
+
+// const ContactPages: React.FC = () => {
+//   const [email, setEmail] = useState<string>("");
+//   const [name, setName] = useState<string>("");
+//   const [info, setInfo] = useState<string>("");
+
+//   const handleOnSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+//     //再読み込みさせない
+//     e.preventDefault();
+
+//     //email,nameをアラート
+//     alert(`名前:  ${name}
+// メールアドレス:  ${email}
+// お問合わせ内容:  ${info}`);
+
+//     // email, name変数を初期化;
+//     setEmail("");
+//     setName("");
+//     setInfo("");
+//   };
+
+//   return (
+//     <>
+//       <div className={styles.contactPages}>
+//         <HeaderLink />
+//         <h2>Contact</h2>
+//         <form onSubmit={(e) => handleOnSubmit(e)}>
+//           <div className={styles.inputWrapper}>
+//             <input
+//               className={styles.textBox}
+//               placeholder="名前"
+//               type="text"
+//               onChange={(e) => setName(e.target.value)}
+//             />
+//           </div>
+
+//           <div className={styles.inputWrapper}>
+//             <input
+//               className={styles.emailBox}
+//               placeholder="メールアドレス"
+//               type="email"
+//               onChange={(e) => setEmail(e.target.value)}
+//             />
+//           </div>
+
+//           <div className={styles.inputWrapper}>
+//             <textarea
+//               className={styles.messageBox}
+//               placeholder="お問い合わせ内容"
+//               onChange={(e) => setEmail(e.target.value)}
+//             />
+//             <span className={styles.inputError}></span>
+//           </div>
+
+//           <button className={styles.submitButton} type="submit">
+//             送信
+//           </button>
+//         </form>
+//       </div>
+//     </>
+//   );
+// };
+
+// export default ContactPages;
