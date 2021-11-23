@@ -26,12 +26,13 @@ export default function App() {
   async function submitForm(e: any) {
     e.preventDefault();
     alert("送信完了");
-    const webHookURL =
-      "https://hooks.slack.com/services/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";
+    const data = {
+      text: `NAME: ${name}\n EMAIL: ${email}\n MESSAGE: ${message}`,
+    };
   }
-  const data = {
-    text: `NAME: ${name}\n EMAIL: ${email}\n MESSAGE: ${message}`,
-  };
+
+  const webHookURL =
+    "https://hooks.slack.com/services/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";
 
   let res = axios.post(webHookURL, JSON.stringify(data), {
     withCredentials: false,
