@@ -1,34 +1,60 @@
-.headerLink {
-  justify-content: space-between;
-  display: flex;
-  opacity: 0.8;
-  .homeLink {
-    align-items: center;
+@media only screen and (max-width: 768px) {
+  //スマートフォン用
+  .headerLink {
+    opacity: 0.8;
     display: flex;
-    &:hover {
-      cursor: pointer;
-      transform: scale(1.2);
+    padding: auto;
+    .homeLink {
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    .othersLink {
+      display: flex;
+      padding: auto;
     }
   }
-  .othersLink {
-    align-items: center;
+}
+@media only screen and (min-width: 769px) {
+  //PC用
+  .headerLink {
+    max-width: 100%;
+    justify-content: space-between;
     display: flex;
-    .top {
+    opacity: 0.8;
+    .homeLink {
+      align-items: center;
+      display: flex;
       &:hover {
         cursor: pointer;
         transform: scale(1.2);
       }
     }
-    .middle {
-      &:hover {
-        cursor: pointer;
-        transform: scale(1.2);
+    .othersLink {
+      align-items: center;
+      display: flex;
+      .top {
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.2);
+        }
+      }
+      .middle {
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.2);
+        }
+      }
+      .bottom {
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.2);
+        }
       }
     }
-    .bottom {
-      &:hover {
-        cursor: pointer;
-        transform: scale(1.2);
+    @media (min-width: 768px) {
+      .headerLink {
+        display: block;
       }
     }
   }

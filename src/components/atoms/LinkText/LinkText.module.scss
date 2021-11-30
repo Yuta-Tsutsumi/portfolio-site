@@ -1,7 +1,19 @@
-.link {
-  padding: 23px;
-  font-size: 23px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #fff;
+@media only screen and (max-width: 768px) {
+  .link {
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .link {
+    padding: 23px;
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+  }
 }
