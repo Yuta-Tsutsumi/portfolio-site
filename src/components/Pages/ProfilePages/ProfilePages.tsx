@@ -12,49 +12,37 @@ const ProfilePages: React.FC = () => {
     <>
       <div className={styles.topImage}>
         <img className={styles.image} src={profileTopImage} alt="トップ画像" />
-        <div className={styles.header}>
+        <header className={styles.header}>
           <HeaderLink />
+        </header>
+        <div className={styles.middleImage}>
+          <ProfileImage />
         </div>
       </div>
-      <div className={styles.middleImage}>
-        <ProfileImage />
-      </div>
-
       <div className={styles.letterBottom}>
         <p>堤 佑太</p>
         <p>Yuta Tsutsumi</p>
         <p>1993年12月21日</p>
-        <div className={styles.link}>
-          <div>
-            <a
-              className={styles.linkTwitter}
-              href="https://twitter.com/warakera29"
-            >
-              <span>
-                <FontAwesomeIcon icon={faTwitter} />
-                &nbsp;Twitter&nbsp;
-              </span>
-            </a>
-            /
-          </div>
-          <div>
-            <a
-              className={styles.linkGithub}
-              href="https://github.com/Yuta-Tsutsumi/portfolio-site"
-            >
-              <span>
-                <FontAwesomeIcon icon={faGithub} />
-                &nbsp;Github&nbsp;
-              </span>
-            </a>
-            /
-          </div>
-          <div>
-            <a className={styles.linkQiita} href="#">
-              Qiita
-            </a>
-          </div>
-        </div>
+        <a className={styles.linkTwitter} href="https://twitter.com/warakera29">
+          <span>
+            <FontAwesomeIcon icon={faTwitter} />
+            &nbsp;Twitter&nbsp;
+          </span>
+        </a>
+        /
+        <a
+          className={styles.linkGithub}
+          href="https://github.com/Yuta-Tsutsumi/portfolio-site"
+        >
+          <span>
+            <FontAwesomeIcon icon={faGithub} />
+            &nbsp;Github&nbsp;
+          </span>
+        </a>
+        /
+        <a className={styles.linkQiita} href="#">
+          Qiita
+        </a>
       </div>
       <div className={styles.letterProfile}>
         <h2>Profile</h2>

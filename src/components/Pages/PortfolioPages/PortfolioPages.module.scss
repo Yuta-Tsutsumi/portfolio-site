@@ -1,16 +1,37 @@
-.portfolioLetter {
-  text-align: center;
-  font-size: 50px;
-  h2 {
+@media only screen and (max-width: 768px) {
+  //スマートフォン用
+  .portfolioLetter {
     text-align: center;
-    margin: 0;
-    padding-top: 15px;
-    font-size: 50px;
-    color: #000;
-    opacity: 0.8;
+    h2 {
+      text-align: center;
+      margin: 0;
+      padding-top: 15px;
+      font-size: 1.7em;
+      color: #000;
+      opacity: 0.8;
+    }
+    a {
+      text-decoration: none;
+      color: #000;
+    }
   }
-  a {
-    text-decoration: none;
-    color: #000;
+}
+
+@media only screen and (min-width: 769px) {
+  //PC用
+  .portfolioLetter {
+    text-align: center;
+    h2 {
+      text-align: center;
+      margin: 0;
+      padding-top: 15px;
+      font-size: 50px;
+      color: #000;
+      opacity: 0.8;
+    }
+    a {
+      text-decoration: none;
+      color: #000;
+    }
   }
 }

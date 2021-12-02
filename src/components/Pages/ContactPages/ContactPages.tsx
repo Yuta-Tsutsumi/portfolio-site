@@ -10,9 +10,6 @@ interface IFormInputs {
   message: string;
 }
 
-const onSubmit: SubmitHandler<IFormInputs> = (data: any) => {
-  console.log(data);
-};
 export default function App() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -23,48 +20,44 @@ export default function App() {
     handleSubmit,
   } = useForm<IFormInputs>();
 
-  async function submitForm(e: any) {
-    e.preventDefault();
-    alert("送信完了");
-    const data = {
-      text: `NAME: ${name}\n EMAIL: ${email}\n MESSAGE: ${message}`,
-    };
-  }
+  const onSubmit: SubmitHandler<IFormInputs> = async (data) => {
+    console.log(data);
+    alert(data.email);
+  };
 
   const webHookURL =
     "https://hooks.slack.com/services/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";
 
-  let res = axios.post(webHookURL, JSON.stringify(data), {
-    withCredentials: false,
-    transformRequest: [
-      (data, headers) => {
-        delete headers.post["Content-Yype"];
-        return data;
-      },
-    ],
-  });
+  // let res = axios.post(webHookURL, JSON.stringify, {
+  //   withCredentials: false,
+  //   transformRequest: [
+  //     (data, headers) => {
+  //       delete headers.post["Content-Yype"];
+  //       return data;
+  //     },
+  //   ],
+  // });
 
-  if (res.status === 200) {
-    alert("送信完了");
-
-    setName("");
-    setEmail("");
-    setMessage("");
-  } else {
-    alert("送信失敗");
-  }
+  // if (res.input === 200) {
+  //   alert("送信完了");
+  //   setName("");
+  //   setEmail("");
+  //   setMessage("");
+  // } else {
+  //   alert("送信失敗");
+  // }
 
   return (
     <form className={styles.contactPages} onSubmit={handleSubmit(onSubmit)}>
-      <div>
+      <header>
         <HeaderLink />
-      </div>
+      </header>
       <h2>Contact</h2>
       <div className={styles.inputWrapper}>
         <div className={styles.textForm}>
           <input
             className={styles.textBox}
-            // placeholder="名前"
+            placeholder="名前"
             id="name"
             type="text"
             {...register("name", { required: true })}
@@ -73,16 +66,17 @@ export default function App() {
               setName(e.target.value);
             }}
           />
-          <label className={styles.label}>name</label>
+          {/* <label htmlFor="name" className={styles.label}>
+            Name
+          </label> */}
         </div>
         {errors.name && (
-          <div className={styles.errorsMessage}>※名前を入れてください</div>
+          <div className={styles.errorsMessage}>名前を入れてください</div>
         )}
-
         <div className={styles.emailForm}>
           <input
             className={styles.emailBox}
-            // placeholder="メールアドレス"
+            placeholder="メールアドレス"
             id="email"
             type="email"
             {...register("email", { required: true })}
@@ -91,18 +85,19 @@ export default function App() {
               setEmail(e.target.value);
             }}
           />
-          <label className={styles.label}>email</label>
+          {/* <label htmlFor="email" className={styles.label}>
+            E-mail
+          </label> */}
         </div>
         {errors.email && (
           <div className={styles.errorsMessage}>
-            ※メールアドレスを入れてください
+            メールアドレスを入れてください
           </div>
         )}
-
         <div className={styles.messageForm}>
           <textarea
             className={styles.messageBox}
-            // placeholder="お問い合わせ内容"
+            placeholder="お問い合わせ内容"
             id="message"
             {...register("message", { required: true })}
             value={message}
@@ -110,20 +105,18 @@ export default function App() {
               setMessage(e.target.value);
             }}
           />
-          <label className={styles.label}>message</label>
+          {/* <label htmlFor="message" className={styles.label}> */}
+          {/* Message
+          </label> */}
         </div>
         {errors.message && (
           <div className={styles.errorsMessage}>
-            ※お問い合わせ内容を入れてください
+            お問い合わせ内容を入れてください
           </div>
         )}
       </div>
-      <div className={styles.aaa}>
-        <button
-          className={styles.submitButton}
-          type="submit"
-          onClick={(e) => submitForm(e)}
-        >
+      <div className={styles.buttonBox}>
+        <button className={styles.submitButton} type="submit">
           送信
         </button>
       </div>

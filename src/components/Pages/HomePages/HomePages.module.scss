@@ -3,13 +3,27 @@
   height: 100vh;
   background-image: url("../../../imageFolder/portfolio.jpg");
   background-size: cover;
-}
 
-h1 {
-  text-align: center;
-  margin: 0;
-  margin-top: 23%;
-  font-size: 80px;
-  color: #fff;
-  opacity: 0.8;
+  img {
+    max-width: 100%;
+  }
+  h1 {
+    text-align: center;
+    margin: 0;
+    margin-top: 23%;
+    font-size: 6em;
+    color: #fff;
+    opacity: 0.8;
+  }
+  @media only screen and (max-width: 768px) {
+    //スマートフォン用
+    h1 {
+      text-align: center;
+      margin: 0;
+      margin-top: 60%;
+      font-size: 3.5em;
+      color: #fff;
+      opacity: 0.8;
+    }
+  }
 }

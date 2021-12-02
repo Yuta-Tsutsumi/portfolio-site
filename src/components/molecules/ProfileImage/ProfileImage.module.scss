@@ -1,8 +1,22 @@
-.profileAlbum {
-  float: left;
-  img {
-    width: 340px;
-    height: 340px;
-    border-radius: 50%;
+@media only screen and (max-width: 768px) {
+  //スマートフォン用
+  .profileAlbum {
+    img {
+      width: 40%;
+      height: 40%;
+      border-radius: 50%;
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  //PC
+  .profileAlbum {
+    float: left;
+    img {
+      width: 35%;
+      height: 35%;
+      border-radius: 50%;
+    }
   }
 }
