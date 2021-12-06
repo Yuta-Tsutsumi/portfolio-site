@@ -1,6 +1,5 @@
 @media only screen and (max-width: 768px) {
   .contactPages {
-    // margin: 0 36% 0 0;
     width: 100vw;
     height: 100vh;
     background-image: url("../../../imageFolder/Contact.jpg");
@@ -175,7 +174,6 @@
     }
   }
   .buttonBox {
-    // margin: 0 0 0 47%;
     text-align: center;
     .submitButton {
       text-align: center;
@@ -218,7 +216,6 @@
 @media only screen and (min-width: 769px) {
   //PC用
   .contactPages {
-    // margin: 0 36% 0 0;
     width: 100vw;
     height: 100vh;
     background-image: url("../../../imageFolder/Contact.jpg");
@@ -229,7 +226,7 @@
     }
     h2 {
       text-align: center;
-      margin: 0;
+      margin-top: 3%;
       padding-top: 15px;
       font-size: 50px;
       color: #000;
@@ -237,15 +234,15 @@
       margin-bottom: 60px;
     }
     .inputWrapper {
-      // margin: 0 36% 0 36%;
       text-align: center;
       .textForm {
         position: relative;
         .textBox {
           position: relative;
+          margin-top: 5%;
           padding: 5px;
           border-radius: 5px;
-          width: 25%;
+          width: 400px;
           height: 40px;
           font-size: 15px;
           border-width: 0 0 2px 0;
@@ -294,7 +291,7 @@
           margin-top: 60px;
           padding: 5px;
           border-radius: 5px;
-          width: 25%;
+          width: 400px;
           height: 40px;
           font-size: 15px;
           border-width: 0 0 2px 0;
@@ -341,7 +338,7 @@
         .messageBox {
           padding: 5px;
           border-radius: 5px;
-          width: 25%;
+          width: 400px;
           height: 130px;
           font-size: 15px;
           border-width: 0 0 2px 0;
@@ -432,69 +429,3 @@
     }
   }
 }
-// .contactPages {
-//   text-align: center;
-//   width: 100vw;
-//   height: 100vh;
-//   background-image: url("../../../imageFolder/Contact.jpg");
-//   object-fit: cover;
-//   background-size: cover;
-//   h2 {
-//     text-align: center;
-//     margin: 0;
-//     padding-top: 15px;
-//     font-size: 50px;
-//     color: #000;
-//     opacity: 0.8;
-//   }
-//   .textBox {
-//     margin-top: 80px;
-//     padding: 5px;
-//     width: 500px;
-//     height: 40px;
-//     border-radius: 5px;
-//     font-size: 15px;
-//   }
-//   .textAreaInput {
-//     margin-top: 80px;
-//     padding: 5px;
-//     width: 500px;
-//     height: 130px;
-//     border-radius: 5px;
-//     font-size: 15px;
-//   }
-//   .submitButton {
-//     margin-top: 30px;
-//     padding: 0px 36px;
-//     border-radius: 5px;
-//     border: 2px solid #76bb74;
-//     line-height: 43px;
-//     font-size: 15px;
-//     font-weight: 700;
-//     color: #76bb74;
-//     transition: all 0.15s ease;
-//     &:hover {
-//       border: 2px solid #55a752;
-//       line-height: 43px;
-//       color: #fff;
-//       background-color: #76bb74;
-//       transition: all 0.3s ease;
-//     }
-//     &:active {
-//       position: relative;
-//       top: 7px;
-//       box-shadow: none;
-//     }
-//   }
-//   .contactTextLink {
-//     padding: 70px 0;
-//     font-size: 50px;
-//   }
-//   .buttonType {
-//     margin-top: 38px;
-//   }
-//   a {
-//     text-decoration: none;
-//     color: #000;
-//   }
-// }

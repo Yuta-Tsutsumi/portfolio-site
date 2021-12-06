@@ -1,11 +1,11 @@
 import React from "react";
 import ProfileImage from "../../molecules/ProfileImage/ProfileImage";
 import profileTopImage from "../../../imageFolder/profileTopImage.jpg";
-import styles from "./ProfilePages.module.scss";
 import HeaderLink from "../../molecules/HeaderLink/HeaderLink";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import styles from "./ProfilePages.module.scss";
 
 const ProfilePages: React.FC = () => {
   return (
