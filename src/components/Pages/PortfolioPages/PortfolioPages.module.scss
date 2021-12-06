@@ -1,18 +1,43 @@
 @media only screen and (max-width: 768px) {
   //スマートフォン用
   .portfolioLetter {
-    text-align: center;
-    h2 {
-      text-align: center;
-      margin: 0;
-      padding-top: 15px;
-      font-size: 1.7em;
-      color: #000;
-      opacity: 0.8;
-    }
     a {
-      text-decoration: none;
       color: #000;
+    }
+    h2 {
+      margin: 5% 0 1% 10%;
+    }
+    .imageBox {
+      margin: 0 10% 0 10%;
+      max-width: 100%;
+      height: 30%;
+      .image {
+        height: 30%;
+      }
+    }
+    .letter {
+      margin: 10% 10% 0 10%;
+      max-width: 100%;
+      height: 30%;
+      .explanation {
+        color: #000;
+        .link {
+          margin-top: 10%;
+        }
+        .linkTwitter {
+          margin-top: 5%;
+          font-size: 1.7em;
+          opacity: 0.8;
+        }
+        .linkGithub {
+          font-size: 1.7em;
+          opacity: 0.8;
+        }
+        .linkQiita {
+          font-size: 1.7em;
+          opacity: 0.8;
+        }
+      }
     }
   }
 }
@@ -20,18 +45,82 @@
 @media only screen and (min-width: 769px) {
   //PC用
   .portfolioLetter {
-    text-align: center;
-    h2 {
-      text-align: center;
-      margin: 0;
-      padding-top: 15px;
-      font-size: 50px;
-      color: #000;
-      opacity: 0.8;
-    }
     a {
-      text-decoration: none;
       color: #000;
+    }
+    h2 {
+      font-size: 2em;
+      text-align: center;
+    }
+    .letterBox {
+      display: flex;
+      .imageBox {
+        max-width: 60%;
+        margin-left: 3%;
+        height: 30%;
+        .image {
+          margin-top: 2em;
+          padding: 3px 3px 0 3px;
+          &:hover {
+            background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+            cursor: pointer;
+            transform: scale(1.01);
+          }
+        }
+      }
+      .letter {
+        margin: 0 3% 0 3%;
+        max-width: 100%;
+        height: 30%;
+        .explanation {
+          h3 {
+            font-size: 1.7em;
+          }
+          color: #000;
+          .link {
+            margin-top: 10%;
+          }
+          .linkTwitter {
+            padding: 10px;
+            font-size: 1.5em;
+            opacity: 0.8;
+            &:hover {
+              background-image: linear-gradient(
+                to top,
+                #c1dfc4 0%,
+                #deecdd 100%
+              );
+              border-radius: 20%;
+            }
+          }
+          .linkGithub {
+            padding: 10px;
+            font-size: 1.5em;
+            opacity: 0.8;
+            &:hover {
+              background-image: linear-gradient(
+                to top,
+                #c1dfc4 0%,
+                #deecdd 100%
+              );
+              border-radius: 20%;
+            }
+          }
+          .linkQiita {
+            padding: 10px;
+            font-size: 1.5em;
+            opacity: 0.8;
+            &:hover {
+              background-image: linear-gradient(
+                to top,
+                #c1dfc4 0%,
+                #deecdd 100%
+              );
+              border-radius: 20%;
+            }
+          }
+        }
+      }
     }
   }
 }
