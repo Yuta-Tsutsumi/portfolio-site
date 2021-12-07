@@ -19,7 +19,6 @@
     }
   }
   .inputWrapper {
-    // margin: 0 36% 0 36%;
     text-align: center;
     .textForm {
       position: relative;
@@ -31,45 +30,17 @@
         height: 40px;
         font-size: 15px;
         border-width: 0 0 2px 0;
-        font-family: Lusitana, serif;
         font-size: 18px;
         line-height: 26px;
         font-weight: 400;
-        &:hover {
-          color: #76bb74;
-        }
         &:focus {
           outline: none;
           border: 2px solid #76bb74;
           border-width: 0 0 2px 0;
           color: #000;
         }
-        &:focus,
-        &.not-empty {
-          + .label {
-            transform: translateY(-45px);
-            color: #76bb74;
-          }
-        }
-      }
-      .label {
-        margin-left: 36%;
-        position: absolute;
-        left: 20px;
-        bottom: 11px;
-        font-family: Lusitana, serif;
-        font-size: 18px;
-        line-height: 26px;
-        font-weight: 400;
-        color: #888;
-        cursor: text;
-        transition: transform 0.2s ease-in-out;
-        &:hover {
-          color: #76bb74;
-        }
       }
     }
-
     .emailForm {
       position: relative;
       .emailBox {
@@ -80,44 +51,17 @@
         height: 40px;
         font-size: 15px;
         border-width: 0 0 2px 0;
-        font-family: Lusitana, serif;
         font-size: 18px;
         line-height: 26px;
         font-weight: 400;
-        &:hover {
-          color: #76bb74;
-        }
         &:focus {
           outline: none;
           border: 2px solid #76bb74;
           border-width: 0 0 2px 0;
           color: #000;
         }
-        &:focus,
-        &.not-empty {
-          + .label {
-            transform: translateY(-45px);
-            color: #76bb74;
-          }
-        }
-      }
-      .label {
-        position: absolute;
-        left: 20px;
-        bottom: 11px;
-        font-family: Lusitana, serif;
-        font-size: 18px;
-        line-height: 26px;
-        font-weight: 400;
-        color: #888;
-        cursor: text;
-        transition: transform 0.2s ease-in-out;
-        &:hover {
-          color: #76bb74;
-        }
       }
     }
-
     .messageForm {
       position: relative;
       .messageBox {
@@ -127,46 +71,18 @@
         height: 100px;
         font-size: 15px;
         border-width: 0 0 2px 0;
-        font-family: Lusitana, serif;
         font-size: 18px;
         line-height: 26px;
         font-weight: 400;
         margin-top: 50px;
-        &:hover {
-          color: #76bb74;
-        }
         &:focus {
           outline: none;
           border: 2px solid #76bb74;
           border-width: 0 0 2px 0;
           color: #000;
         }
-        &:focus,
-        &.not-empty {
-          + .label {
-            transform: translateY(-45px);
-            color: #76bb74;
-          }
-        }
-      }
-      .label {
-        z-index: 5;
-        position: absolute;
-        top: 60px;
-        left: 20px;
-        font-family: Lusitana, serif;
-        font-size: 18px;
-        line-height: 26px;
-        font-weight: 400;
-        color: #888;
-        cursor: text;
-        transition: transform 0.2s ease-in-out;
-        &:hover {
-          color: #76bb74;
-        }
       }
     }
-
     .errorsMessage {
       font-size: 20px;
       font-weight: bolder;
@@ -239,52 +155,24 @@
         position: relative;
         .textBox {
           position: relative;
-          margin-top: 5%;
+          margin-top: 1%;
           padding: 5px;
           border-radius: 5px;
           width: 400px;
           height: 40px;
           font-size: 15px;
           border-width: 0 0 2px 0;
-          font-family: Lusitana, serif;
           font-size: 18px;
           line-height: 26px;
           font-weight: 400;
-          &:hover {
-            color: #76bb74;
-          }
           &:focus {
             outline: none;
             border: 2px solid #76bb74;
             border-width: 0 0 2px 0;
             color: #000;
           }
-          &:focus,
-          &.not-empty {
-            + .label {
-              transform: translateY(-45px);
-              color: #76bb74;
-            }
-          }
-        }
-        .label {
-          margin-left: 36%;
-          position: absolute;
-          left: 20px;
-          bottom: 11px;
-          font-family: Lusitana, serif;
-          font-size: 18px;
-          line-height: 26px;
-          font-weight: 400;
-          color: #888;
-          cursor: text;
-          transition: transform 0.2s ease-in-out;
-          &:hover {
-            color: #76bb74;
-          }
         }
       }
-
       .emailForm {
         position: relative;
         .emailBox {
@@ -299,40 +187,14 @@
           font-size: 18px;
           line-height: 26px;
           font-weight: 400;
-          &:hover {
-            color: #76bb74;
-          }
           &:focus {
             outline: none;
             border: 2px solid #76bb74;
             border-width: 0 0 2px 0;
             color: #000;
           }
-          &:focus,
-          &.not-empty {
-            + .label {
-              transform: translateY(-45px);
-              color: #76bb74;
-            }
-          }
-        }
-        .label {
-          position: absolute;
-          left: 20px;
-          bottom: 11px;
-          font-family: Lusitana, serif;
-          font-size: 18px;
-          line-height: 26px;
-          font-weight: 400;
-          color: #888;
-          cursor: text;
-          transition: transform 0.2s ease-in-out;
-          &:hover {
-            color: #76bb74;
-          }
         }
       }
-
       .messageForm {
         position: relative;
         .messageBox {
@@ -347,41 +209,14 @@
           line-height: 26px;
           font-weight: 400;
           margin-top: 50px;
-          &:hover {
-            color: #76bb74;
-          }
           &:focus {
             outline: none;
             border: 2px solid #76bb74;
             border-width: 0 0 2px 0;
             color: #000;
           }
-          &:focus,
-          &.not-empty {
-            + .label {
-              transform: translateY(-45px);
-              color: #76bb74;
-            }
-          }
-        }
-        .label {
-          z-index: 5;
-          position: absolute;
-          top: 60px;
-          left: 20px;
-          font-family: Lusitana, serif;
-          font-size: 18px;
-          line-height: 26px;
-          font-weight: 400;
-          color: #888;
-          cursor: text;
-          transition: transform 0.2s ease-in-out;
-          &:hover {
-            color: #76bb74;
-          }
         }
       }
-
       .errorsMessage {
         font-size: 20px;
         font-weight: bolder;
@@ -389,7 +224,6 @@
       }
     }
     .buttonBox {
-      // margin: 0 0 0 47%;
       text-align: center;
       .submitButton {
         text-align: center;
