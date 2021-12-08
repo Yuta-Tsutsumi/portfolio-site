@@ -13,7 +13,7 @@ const PortfolioPages: React.FC = () => {
         <HeaderLink />
       </header>
       <h2>ポートフォリオサイト</h2>
-      <div className={styles.letterBox}>
+      <main className={styles.letterBox}>
         <div className={styles.imageBox}>
           <div className={styles.image}>
             <a href="#">
@@ -21,7 +21,7 @@ const PortfolioPages: React.FC = () => {
             </a>
           </div>
         </div>
-        <div className={styles.letter}>
+        <nav className={styles.letter}>
           <div className={styles.explanation}>
             <h3>アプリの特徴</h3>
             <p>
@@ -63,8 +63,8 @@ const PortfolioPages: React.FC = () => {
               </a>
             </div>
           </div>
-        </div>
-      </div>
+        </nav>
+      </main>
     </div>
   );
 };

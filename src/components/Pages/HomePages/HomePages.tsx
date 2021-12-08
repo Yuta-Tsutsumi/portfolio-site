@@ -5,9 +5,9 @@ import styles from "./HomePages.module.scss";
 const HomePages: React.FC = () => {
   return (
     <div className={styles.homeImage}>
-      <div className={styles.heading}>
+      <header className={styles.heading}>
         <HeaderLink />
-      </div>
+      </header>
       <div>
         <h1>
           Welcome to <br />
