@@ -5,14 +5,7 @@
 <h1>URL</h1>
 
 <h1>使用技術</h1>
-・React
-・Typescript
-・HTML
-・CSS
-・sass/scss
-・React Hook Form
-・React Router
-・AWS Amplify
+React/Typescript/HTML/sass(scss)/React Hook Form/React Router/AWS Amplify
 
 <h1>作成にあたり苦労した点・又どの様に乗り越えたか</h1>
 
