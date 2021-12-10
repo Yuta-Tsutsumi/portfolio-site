@@ -5,7 +5,7 @@
 <h1>URL</h1>
 
 <h1>使用技術</h1>
-・React
+・React\n
 ・Typescript
 ・HTML
 ・CSS
