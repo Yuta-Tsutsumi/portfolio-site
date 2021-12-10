@@ -5,8 +5,7 @@
 <h1>URL</h1>
 
 <h1>使用技術</h1>
-<p>React</p>
-Typescript/HTML/sass(scss)/React Hook Form/React Router/AWS Amplify</p>
+<p>React\nTypescript/HTML/sass(scss)/React Hook Form/React Router/AWS Amplify</p>
 
 <h1>作成にあたり苦労した点・又どの様に乗り越えたか</h1>
 <p>今回ポートフォリオサイトに取り掛かるなかで、お問い合わせフォーム作成に一番苦労しました。
