@@ -40,7 +40,10 @@ const ProfilePages: React.FC = () => {
           </span>
         </a>
         /
-        <a className={styles.linkQiita} href="#">
+        <a
+          className={styles.linkQiita}
+          href="https://qiita.com/Yuta-Tsutsumi/items/4c29b64f1344d3a2b38e"
+        >
           Qiita
         </a>
       </div>
