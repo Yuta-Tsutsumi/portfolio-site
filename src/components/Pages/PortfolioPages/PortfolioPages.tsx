@@ -23,7 +23,6 @@ const PortfolioPages: React.FC = () => {
         </div>
         <nav className={styles.letter}>
           <div className={styles.explanation}>
-            <a href="https://main.d20u4ljofm9ii1.amplifyapp.com/">aaa</a>
             <h3>アプリの特徴</h3>
             <p>
               React+TypeScriptを使用し作成したサイトになります。
