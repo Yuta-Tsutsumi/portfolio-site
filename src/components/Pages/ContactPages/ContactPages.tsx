@@ -18,7 +18,6 @@ export default function App() {
     formState: { errors },
     handleSubmit,
   } = useForm<IFormInputs>();
-
   const onSubmit: SubmitHandler<IFormInputs> = (data) => {
     console.log(data);
   };
