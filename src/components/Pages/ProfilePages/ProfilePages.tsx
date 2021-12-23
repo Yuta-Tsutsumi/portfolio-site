@@ -23,7 +23,12 @@ const ProfilePages: React.FC = () => {
         <p>堤 佑太</p>
         <p>Yuta Tsutsumi</p>
         <p>1993年12月21日</p>
-        <a className={styles.linkTwitter} href="https://twitter.com/warakera29">
+        <a
+          className={styles.linkTwitter}
+          href="https://twitter.com/warakera29"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <span>
             <FontAwesomeIcon icon={faTwitter} />
             &nbsp;Twitter&nbsp;
@@ -33,6 +38,8 @@ const ProfilePages: React.FC = () => {
         <a
           className={styles.linkGithub}
           href="https://github.com/Yuta-Tsutsumi/portfolio-site"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <span>
             <FontAwesomeIcon icon={faGithub} />
@@ -43,6 +50,8 @@ const ProfilePages: React.FC = () => {
         <a
           className={styles.linkQiita}
           href="https://qiita.com/Yuta-Tsutsumi/items/4c29b64f1344d3a2b38e"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Qiita
         </a>

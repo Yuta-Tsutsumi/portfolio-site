@@ -43,6 +43,8 @@ const PortfolioPages: React.FC = () => {
               <a
                 className={styles.linkTwitter}
                 href="https://twitter.com/warakera29"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <span>
                   <FontAwesomeIcon icon={faTwitter} />
@@ -52,6 +54,8 @@ const PortfolioPages: React.FC = () => {
               <a
                 className={styles.linkGithub}
                 href="https://github.com/Yuta-Tsutsumi/portfolio-site"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <span>
                   <FontAwesomeIcon icon={faGithub} />
@@ -61,6 +65,8 @@ const PortfolioPages: React.FC = () => {
               <a
                 className={styles.linkQiita}
                 href="https://qiita.com/Yuta-Tsutsumi/items/4c29b64f1344d3a2b38e"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Qiita
               </a>
