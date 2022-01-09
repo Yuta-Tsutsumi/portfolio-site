@@ -24,10 +24,11 @@
       position: relative;
       .textBox {
         position: relative;
-        padding: 5px;
+        padding: 5px 10px;
         border-radius: 5px;
         width: 80%;
         height: 40px;
+        opacity: 0.8;
         font-size: 15px;
         border-width: 0 0 2px 0;
         font-size: 18px;
@@ -45,10 +46,11 @@
       position: relative;
       .emailBox {
         margin-top: 60px;
-        padding: 5px;
+        padding: 5px 10px;
         border-radius: 5px;
         width: 80%;
         height: 40px;
+        opacity: 0.8;
         font-size: 15px;
         border-width: 0 0 2px 0;
         font-size: 18px;
@@ -65,16 +67,17 @@
     .messageForm {
       position: relative;
       .messageBox {
-        padding: 5px;
+        margin-top: 50px;
+        padding: 5px 10px;
         border-radius: 5px;
         width: 80%;
         height: 100px;
+        opacity: 0.8;
         font-size: 15px;
         border-width: 0 0 2px 0;
         font-size: 18px;
         line-height: 26px;
         font-weight: 400;
-        margin-top: 50px;
         &:focus {
           outline: none;
           border: 2px solid #76bb74;
@@ -156,7 +159,7 @@
         .textBox {
           position: relative;
           margin-top: 1%;
-          padding: 5px;
+          padding: 5px 10px;
           border-radius: 5px;
           width: 400px;
           height: 40px;
@@ -177,13 +180,12 @@
         position: relative;
         .emailBox {
           margin-top: 60px;
-          padding: 5px;
+          padding: 5px 10px;
           border-radius: 5px;
           width: 400px;
           height: 40px;
           font-size: 15px;
           border-width: 0 0 2px 0;
-          font-family: Lusitana, serif;
           font-size: 18px;
           line-height: 26px;
           font-weight: 400;
@@ -198,13 +200,12 @@
       .messageForm {
         position: relative;
         .messageBox {
-          padding: 5px;
+          padding: 5px 10px;
           border-radius: 5px;
           width: 400px;
           height: 130px;
           font-size: 15px;
           border-width: 0 0 2px 0;
-          font-family: Lusitana, serif;
           font-size: 18px;
           line-height: 26px;
           font-weight: 400;
@@ -232,7 +233,7 @@
         border-radius: 5px;
         border: 2px solid #76bb74;
         line-height: 43px;
-        font-size: 15px;
+        font-size: 18px;
         font-weight: 700;
         color: #76bb74;
         transition: all 0.15s ease;
