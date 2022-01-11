@@ -5,9 +5,11 @@
       color: #000;
     }
     h2 {
-      margin: 5% 0 1% 10%;
+      text-align: center;
     }
-
+    h3 {
+      margin: 3% 0 3% 10%;
+    }
     .imageBox {
       margin: 0 10% 0 10%;
       max-width: 100%;
@@ -51,8 +53,23 @@
       color: #000;
     }
     h2 {
-      font-size: 2em;
+      margin-top: 0;
+      font-size: 50px;
       text-align: center;
+    }
+
+    .background {
+      padding: 29px;
+      &:hover {
+        background-color: #edf2f7;
+      }
+    }
+
+    h3 {
+      font-weight: bold;
+      font-size: 1.8em;
+      text-align: center;
+      margin: 0;
     }
     .letterBox {
       display: flex;
@@ -75,8 +92,8 @@
         max-width: 100%;
         height: 30%;
         .explanation {
-          h3 {
-            font-size: 1.7em;
+          h4 {
+            font-size: 1.3em;
           }
           color: #000;
           .link {
