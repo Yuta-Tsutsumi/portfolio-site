@@ -1,11 +1,9 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import HomePages from "./components/Pages/HomePages/HomePages";
-import ContactPages from "./components/Pages/ContactPages/ContactPages";
-import ProfilePages from "./components/Pages/ProfilePages/ProfilePages";
-import PortfolioPages from "./components/Pages/PortfolioPages/PortfolioPages";
-import styles from "./App.module.scss";
-import HeaderLink from "./components/molecules/HeaderLink/HeaderLink";
+import HomePages from "./components/pages/HomePages/HomePages";
+import ContactPages from "./components/pages/ContactPages/ContactPages";
+import ProfilePages from "./components/pages/ProfilePages/ProfilePages";
+import PortfolioPages from "./components/pages/PortfolioPages/PortfolioPages";
 
 const App: React.FC = () => {
   return (
