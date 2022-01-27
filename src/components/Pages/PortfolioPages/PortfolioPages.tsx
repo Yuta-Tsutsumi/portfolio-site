@@ -5,7 +5,7 @@ import styles from "./PortfolioPages.module.scss";
 
 const PortfolioPages: React.FC = () => {
   return (
-    <div className={styles.aaa}>
+    <div className={styles.root}>
       <HeaderLink />
       <h2>Portfolio</h2>
       <PortfolioSite />
