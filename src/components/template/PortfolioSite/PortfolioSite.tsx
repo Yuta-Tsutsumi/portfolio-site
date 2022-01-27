@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderLink from "../../molecules/HeaderLink/HeaderLink";
+// import HeaderLink from "../../molecules/HeaderLink/HeaderLink";
 import portfolio from "../../../imageFolder/portfolio.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
@@ -9,10 +9,7 @@ import styles from "./PortfolioSite.module.scss";
 const PortfolioSite = () => {
   return (
     <div className={styles.portfolioLetter}>
-      <header className={styles.header}>
-        <HeaderLink />
-      </header>
-      <h2>Portfolio</h2>
+      <header className={styles.header}></header>
       <div className={styles.background}>
         <h3>Portfolio Site</h3>
         <main className={styles.letterBox}>
