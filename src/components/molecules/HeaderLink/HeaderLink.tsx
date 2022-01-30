@@ -20,6 +20,9 @@ const HeaderLink: React.FC = () => {
         <div className={styles.bottom}>
           <LinkText url="/contact" text="Contact" />
         </div>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
   );
