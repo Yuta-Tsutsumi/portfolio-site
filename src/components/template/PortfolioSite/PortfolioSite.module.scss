@@ -58,7 +58,13 @@
       text-align: center;
     }
 
-    .background {
+    .background_movie {
+      padding: 29px;
+      &:hover {
+        background-color: #edf2f7;
+      }
+    }
+    .background_protfolio {
       padding: 29px;
       &:hover {
         background-color: #edf2f7;
