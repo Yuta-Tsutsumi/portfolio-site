@@ -62,7 +62,7 @@ const PortfolioSite = () => {
                   /
                   <a
                     className={styles.linkQiita}
-                    href="https://qiita.com/Yuta-Tsutsumi"
+                    href="https://qiita.com/Yuta-Tsutsumi/items/2075e20645345b9c85c3"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
